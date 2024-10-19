@@ -110,7 +110,7 @@ canvas {
 
 .subtext {
     position: absolute;
-    top: 75%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100vw;
@@ -121,20 +121,29 @@ canvas {
     z-index: 2;
     font-family: Raleway, sans-serif;
     font-weight: 600;
-    font-size: 1.5em;
     letter-spacing: 0.15em;
     text-align: center;
 }
 
 .sub {
-    top: 82.5%;
     font-weight: 500;
     font-size: 1em;
+    margin-bottom: 1em;
 }
 
 .sub-1 {
     padding:0 15px;  ;
-    top: 86%;
     font-weight: 300;
     font-size: 1em;
+}
+
+.subtext-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    font-size: 1.5em;
+    display: flex;
+    margin: 3em auto 3em auto;
 }
