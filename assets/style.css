@@ -14,6 +14,20 @@
     font-weight: 900;
 }
 
+@font-face {
+    font-family: Raleway;
+    src: url('RalewayMedium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('RalewayLight.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,11 +50,16 @@ canvas {
 }
 
 .text-404 {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .text-404 h1 {
@@ -52,6 +71,7 @@ canvas {
     -o-animation: Anim-404 ease-in-out infinite;
     animation: Anim-404 ease-in-out infinite;
 }
+
 
 .text-404 h1:nth-child(1) {
     animation-duration: 5s;
@@ -78,4 +98,43 @@ canvas {
     .text-404 h1 {
         font-size: 8em;
     }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 0.15em;
+    text-align: center;
+}
+
+.sub {
+    top: 82.5%;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.sub-1 {
+    padding:0 15px;  ;
+    top: 86%;
+    font-weight: 300;
+    font-size: 1em;
 }
